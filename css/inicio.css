@@ -1,0 +1,241 @@
+body {
+    margin: 0px;
+    
+    background-image: linear-gradient(to right, green , rgb(140, 196, 28));
+    height: 300;
+    /*box-shadow: 0px 0px 100px 5px;*/
+}
+
+.footer {
+    margin-top: 0px;
+    background-color: #65b115;
+    color: black;
+    font-size: bold;
+    align-items: center;
+    height: 160px;
+    list-style: none;
+    font-family: monospace;
+}
+
+
+.logo {
+    float: left;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    cursor: hand;
+    background-repeat: no-repeat;
+    padding: 4px 0 4px 30px;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.titulo {
+    text-decoration: none;
+    position: relative;
+    right: 55%;
+    margin: 0px;
+    color: #000;
+    font-size: 25px;
+    font-family: Courier New, monospace;
+    padding: 4px 0 0px 0px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.header .container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header input {
+    font-family: Courier New, monospace;
+    color: black;
+    height: 25px;
+    width: 300px;
+    border: 2px solid yellowgreen;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.678) !important;
+    list-style: none;
+}
+
+/*.lupa {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+form li {
+    position: relative;
+    float: right;
+}
+
+form li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+form li a:hover {
+    color: yellow;
+    font-weight: bold;
+    -moz-box-shadow: 0 3px 100px 0 #CCC;
+    text-shadow: 0px 0px 5px green;
+}
+
+form li ul {
+    position: absolute;
+    width: 105px;
+    padding: 1px;
+    top: 25px;
+    left: 0;
+    background-color: green;
+    display: none;
+}
+
+form li:hover ul,
+.btn li.hover ul {
+    display: block;
+}
+
+form li ul li {
+
+    display: block;
+    list-style-type: none;
+    width: 100%;
+}*/
+
+.navbar {
+    background-color: rgba(250, 235, 215, 0);
+    
+    font-size: medium;
+    font-family: Courier New, monospace;
+    width: 550px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+    padding: 0;
+    float: left;
+}
+
+.navbar li {
+    position: relative;
+    float: left;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.navbar li a:hover {
+    color: yellow;
+    font-weight: bold;
+    -moz-box-shadow: 0 3px 100px 0 #CCC;
+    text-shadow: 0px 0px 5px green;
+}
+
+.navbar li ul {
+    position: absolute;
+    width: 80px;
+    padding: 1px;
+    top: 25px;
+    left: 0;
+    background-image: linear-gradient(180deg, #65b115, rgb(140, 196, 28));
+    display: none;
+}
+
+.navbar li:hover ul,
+.menu li.hover ul {
+    display: block;
+}
+
+.navbar li ul li {
+
+    display: block;
+    list-style-type: none;
+    width: 100%;
+}
+
+.menu li {
+    /*-webkit-box-shadow: 0 3px 10px 0 yellowgreen;*/
+    width: auto;
+}
+
+.banner {
+    height: 600px;
+    background-image: url(../img/agora.jpg);
+    background-size: cover;
+}
+
+
+.texto1 {
+    color: rgb(94, 91, 91);
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    font-family: DejaVu Sans Mono, monospace;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.texto2 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.banner .card {
+    background-color:#65b115;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    left: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1%;
+
+}
+
+.card {
+    margin-top: 20px;
+    padding: 2%;
+    border-radius: 4px;
+
+}
+
+.calc {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.card .texto_banner {
+    color: white;
+    font-size: 17px;
+}

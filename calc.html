@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroConsult - Calculadora</title>
+
+    <link rel="stylesheet" href="css/calc.css" media="all">
+
+</head>
+
+<body>
+    <div class="header">
+        <a href="inicio.html"><img src="img/logooriginal.png" class="logo"></a>
+        <div class="container">
+            <a href="inicio.html">
+                <h1 class="titulo">AgroConsult</h1>
+            </a>
+
+            <ul class="navbar">
+
+                <li> <a href="inicio.html">Início</a></li>
+                <li><a href="calc.html">Calculadora</a></li>
+                <li><a href="#">Sobre Nós</a>
+                    <ul>
+                        <li><a href="#">Nossos serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Entrar</a></li>
+
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <div>
+
+            <div class="container">
+                <div class="texto1">
+                        <h3>Cultivo de milho</h3>
+                        <p>
+                            &nbsp; O milho é um dos grãos <b>mais produzidos</b> no mundo e uma das <b>culturas mais
+                                importantes</b>
+                            no Brasil - cultivado em pequenas, <b>médias e grandes</b> propriedades e sendo <b>fonte de
+                                renda</b> de
+                            diversas famílias. No VBP (valor bruto da produção agropecuária) do ano de 2021, o <b>milho
+                                teve o
+                                valor</b> R$ 124,8 bilhões.
+                            <br>
+                            Com os <b>prognósticos do tempo</b> para 2022 indicando chuvas em momento adequado com bom
+                            desenvolvimento das lavouras, <b>o valor estimado</b> para o VBP do milho é de, R$ 148,5
+                            <b>bilhões em 2022</b>.
+                        </p>
+                    
+                </div>
+
+                <div class="card">
+
+                    <h4>Calcule o quanto irá Lucrar</h4>
+
+                    <div class="calculadora">
+                        <div>
+                            <h4><input type="text" placeholder="Campo em hectare" id="tam_lavoura"></h4>
+                            <h4> <input type="text" placeholder="Sacas por hectare" id="qtd_sacas"></h4>
+                            <button onclick="calcular()" class="btn">Calcular</button>
+                            <button onclick="zerar()" class="btn">Zerar</button>
+                        </div>
+                    </div>
+                </div><br>
+                <div id="resultado" class="texto2"></div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer id="footer" class="footer">
+            <section class="container">
+                <article class="footer-menu">
+                    <!-- Parte 1 -->
+                    <div class="menu-item">
+                        <h4>Equipe Agro Consult</h4>
+                        <ul>
+                            <li>Emerson José dos Santos</li>
+                            <li>Felipe de Oliveira Pires</li>
+                            <li>Gabriel Henrique de Camargo Bordin</li>
+                            <li>Helder Davidson Rodrigues Alvarenga</li>
+                            <li>Henrique Oliveira da Silva</li>
+                            <li>Leandro Vieira da Costa</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- Marca de copyright -->
+                <article class="copy">
+                    <hr>
+                    <p>&copy; <span id="spn_year"></span> Todos os direitos reservados para Agro Consult</p>
+                </article>
+            </section>
+        </footer>
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+        // Pegando o número de sacas e o tamanho da lavoura
+        var sacas = Number(tam_lavoura.value)
+        var lavoura = Number(qtd_sacas.value)
+
+        // Calculando a porcentagem de lucro em relação a média nacional
+        var lavoura_media = (100 * lavoura / 90) - 100
+        // Calculando a porcentagem de lucro em relação as lavouras mais rentaveis
+        var lavoura_rentavel = (100 * lavoura / 270) - 100
+        // Calculando a porcentagem de lucro em relação a média nacional COM nosso sistema
+        var lavoura_m_sistema = ((100 * lavoura / 90) * 1.16) - 100
+        // Calculando a porcentagem de lucro em relação as lavoura mais rentaveis COM nosso sistema
+        var lavoura_r_sistema = ((100 * lavoura / 270) * 1.16) - 100
+
+        // A safra da lavoura do usuario
+        var safra = sacas * lavoura
+        // A safra da lavoura do usuario COM nosso sistema
+        var safra_sistema = safra * 1.16
+
+        // Valor da saca (17/03/2022 às 15:12)
+        var valor_saca = 103.74
+        // Valor da safra do cliente
+        var lucro_saca = safra * 103.57
+        // Valor da safra do cliente COM nosso sistema
+        var lucro_saca_sistema = safra * 103.57 * 1.16
+        // Comparando o lucro com ou sem o nosso sistema
+        var diferenca_lucro = lucro_saca_sistema - lucro_saca
+
+        var frase_final = `<h3>Olá!</h3>`
+        frase_final += `Com o nosso sistema, garantimos um aumento de <b>16%</b> na produção do milho<br>`
+        frase_final += `- Sua safra será de ${(safra_sistema).toFixed(2)} sacas em uma safra.<br>`
+        frase_final += `- Sua lavoura produzirá ${(lavoura_m_sistema).toFixed(2)}% em relação a média <b>nacional</b> e ${(lavoura_r_sistema).toFixed(2)}% as lavouras mais rentáveis.<br>`
+        frase_final += `- Vendendo a saca por R$ 103,57, o lucro será de R$${(lucro_saca_sistema).toFixed(2)}, <b>R$${(diferenca_lucro).toFixed(2)}</b> a mais<br>`
+
+        resultado.innerHTML = frase_final
+    }
+
+    function zerar() {
+        resultado.innerHTML = ""
+    }
+</script>

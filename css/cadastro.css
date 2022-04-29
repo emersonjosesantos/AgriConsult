@@ -1,0 +1,189 @@
+body {
+    margin: 0px;
+    background-color: green;
+}
+
+body ul li a {
+    color: yellow;
+}
+
+a:link {
+    color: yellow;
+    text-decoration: none;
+    font-weight: normal;
+    border-right-color: yellow;
+    border-bottom-color: yellow;
+    border-left-color: yellow;
+}
+
+a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+.logo {
+    float: left;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    cursor: hand;
+    background-repeat: no-repeat;
+    padding: 4px 0 4px 30px;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.titulo {
+    position: relative;
+    right: 55%;
+    margin: 0px;
+    color: #000;
+    font-size: 25px;
+    font-family: Courier New, monospace;
+    padding: 4px 0 0px 0px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.header .container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    font-size: medium;
+    font-family: Courier New, monospace;
+    width: 550px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+    padding: 0;
+    float: left;
+}
+
+.navbar li {
+    position: relative;
+    float: left;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.navbar li a:hover {
+    color: yellow;
+   
+    /* -webkit-box-shadow:0 3px 10px 0 rgb(8, 245, 40);*/
+    text-shadow: 0px 0px 5px green;
+}
+
+.navbar li ul {
+    position: absolute;
+    width: 105px;
+    padding: 1px;
+    top: 25px;
+    left: 0;
+    background-color: green;
+    display: none;
+}
+
+.navbar li:hover ul, .menu li.hover ul {
+    display: block;
+}
+
+.navbar li ul li {
+
+    display: block;
+    list-style-type: none;
+    width: 150px;
+}
+
+.banner {
+    display: flex;
+    height: 700px;
+    background-image: url("../img/cadastro.jpg");
+    background-size: cover;
+}
+
+.card {
+    font-family: Courier New, monospace;
+    background-color:#65b115;
+    color: rgb(10, 143, 10);
+    height: 510px;
+    width: 400px;
+    display: flex;
+    position: relative;
+    bottom: 7px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    margin: auto;
+    margin-bottom: 28px;
+    border-radius: 20px;
+    /*box-shadow: 0px 0px 10px 4px;*/
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.btn {
+
+    display: flex;
+    font-family: Courier New, monospace;
+    position: relative;
+    bottom: 7px;
+    margin-top: 10px;
+    border: 0;
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background: rgb(12, 204, 12);
+}
+
+input {
+    font-family: Courier New, monospace;
+    display: flex;
+    position: relative;
+    bottom: 7px;
+    color: black ;
+    height: 30px;
+    border: 2px solid green;
+    border-style: groove;
+    border-radius: 4px;
+    background-color: gainsboro!important;
+}
+
+.mostrar {
+    position: relative;
+    float: left;
+    height: 10px;
+    cursor: pointer;
+    cursor: hand;
+    background-repeat: no-repeat;
+    padding: 4px 0 4px 30px;
+    left: 14%;
+    bottom: 24.5%;
+}

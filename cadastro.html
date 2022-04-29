@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroConsult - cadastro</title>
+
+    <link rel="stylesheet" href="css/cadastro.css" media="all">
+    
+</head>
+
+<body>
+    
+    <div class="header">
+        <a href="inicio.html"><img src="img/logooriginal.png" class="logo"></a>
+        <div class="container">
+            <a href="inicio.html"><h1 class="titulo" >AgroConsult</h1></a>
+           
+
+            <ul class="navbar">
+                
+                <li> <a href="inicio.html">Início</a></li>
+                <li><a href="calc.html">Calculadora</a></li>
+                <li><a href="#">Sobre Nós</a>
+                    <ul>
+                      <li><a href="#">Nossos serviços</a></li>
+                      <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                  </li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Entrar</a></li>
+                
+            
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <div class="card">
+                <h1>Cadastro</h1>
+                <h4>Nome</h4><input type="text" placeholder="Nome Completo"  id="in_nome">
+                <h4>E-mail</h4><input type="email" placeholder="Seu e-mail" id="in_email">
+                <h4>Senha</h4><input type="password" placeholder="********" id="in_senha">
+                <h4>Confirmar Senha</h4><input type="password" placeholder="********" id="conf_senha">
+                <img src="img/exibindo.png"  id="img_foto" onclick="mostrarOcultarSenha()" class="mostrar" >
+                <button onclick="cadastrar()" class="btn">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <section class="container">
+            <article class="footer-menu">
+                <!-- Parte 1 -->
+                <div class="menu-item">
+                    <h4>Equipe Agro Consult</h4>
+                    <ul>
+                        <li>Emerson José dos Santos</li>
+                        <li>Felipe de Oliveira Pires</li>
+                        <li>Gabriel Henrique de Camargo Bordin</li>
+                        <li>Helder Davidson Rodrigues Alvarenga</li>
+                        <li>Henrique Oliveira da Silva</li>
+                        <li>Leandro Vieira da Costa</li>
+                    </ul>
+                </div>
+                <!-- Parte 2 -->
+                <div class="menu-item">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Uken49/Agro-Consult"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </article>
+            <!-- Marca de copyright -->
+            <article class="copy">
+                <hr>
+                <p>&copy; <span id="spn_year"></span> Todos os direitos reservados para Agro Consult</p>
+            </article>
+        </section>
+    </footer>
+            
+</body>
+
+</html>
+<script>
+
+
+
+    function cadastrar() {
+    
+        var nome = in_nome.value
+        var senha = in_senha.value
+        var email = in_email.value
+    
+        if ( (nome == "Emerson José Dos Santos" || nome == "Ravi de Lima Santos")  && senha == "12345" && (email == "emersonjose@santos.com" || email == "ravilima@santos.com") ) {
+            alert("Usuário autenticado")
+        } else {
+            alert("Falha na autenticação")
+        }
+        
+    }
+    
+    function mostrarOcultarSenha(){
+    var senha = document.getElementById("in_senha");
+    var conf = document.getElementById("conf_senha")
+    if(senha.type =="password" && conf.type== "password"){
+        senha.type="text";
+        conf.type= "text"
+        img_foto.src = "img/oculto.png"
+    }
+    else{
+        senha.type ="password"
+        conf.type ="password"
+        img_foto.src = "img/exibindo.png"  
+    }
+}
+    </script>
