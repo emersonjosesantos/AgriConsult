@@ -54,9 +54,10 @@
                 <div>
                     <h1 class="texto2"> Bem vindo à AgroConsult!</h1>
                     <h2>Nosso sincero desejo é fazer com que sua lavoura cresça de 
-                        maneira saudável em um bom solo.
+                        maneira saudável em um bom solo,focando em aumentar a qualidade do seu agronegócio.  
                         Já pensou em aumentar o rendimeto da sua lavoura em até 16% ao ano?
-                        Temos a solução para o déficit hídrico do seu negócio!
+                        Aqui seu negócio tem a melhoria que você espera, conte conosco!
+                    
                     </h2>
                 </div>
 
@@ -68,34 +69,41 @@
             </div>
 
         </div>
+            <div class="container2">
+                
+                    <h2 class="texto3">ESTRATÉGIA E SOLUÇÕES</h2><br>
 
+                    <h3  class="texto4">
+A Agroconsult desenvolve projetos apoiando as empresas do ramo da agricultura, 
+temos como estratégia: <br><br><br>
+
+  Revisar a lavoura dia após dia monitorando o solo e <br><br>
+  procurando oferecer a melhor solução para o déficit hídrico;<br><br>
+reduzir a perda de sementes de plantío e grãos ao longo desse período.
+                </h3>
+                <img src="img/tec.jpg" alt="tec" class="tec"><br>
+                <img src="img/solo.jpg" alt=" solo" class="solo">
+            </div>
     </div>
 
     <!-- Rodapé -->
-    <footer id="footer" class="footer">
-        <section class="container">
-            <article class="footer-menu">
-                <!-- Parte 1 -->
-                <div class="menu-item">
-                    <h4>Equipe Agro Consult</h4>
-                    <ul>
-                        <li>Emerson José dos Santos</li>
-                        <li>Felipe de Oliveira Pires</li>
-                        <li>Gabriel Henrique de Camargo Bordin</li>
-                        <li>Helder Davidson Rodrigues Alvarenga</li>
-                        <li>Henrique Oliveira da Silva</li>
-                        <li>Leandro Vieira da Costa</li>
-                    </ul>
-                </div>
+    <footer class="footer">
+        <div class="container3">
+            <ul>
+                <a href="contato.html" class="membros">Equipe AgroConsult</a><br>
+                
+            </ul>
+            <article>
+                <p class="copy">&copy;  <span id="i_ano" style="color: rgb(3, 100, 3);"></span> &nbsp; Todos direitos reservados à AgroConsult</p>
             </article>
-            <!-- Marca de copyright -->
-            <article class="copy">
-                <hr>
-                <p>&copy; <span id="spn_year"></span> Todos os direitos reservados para Agro Consult</p>
-            </article>
-        </section>
+        </div>
     </footer>
 
 </body>
 
 </html>
+<script>
+var Data_atual = new Date()
+var Ano_atual = Data_atual.getFullYear();
+document.getElementById('i_ano').innerHTML = Ano_atual
+</script>

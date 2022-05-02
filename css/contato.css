@@ -116,9 +116,8 @@ a:hover {
 
 .banner {
     height: 900px;
-    background-color: yellow;
+    background-image: url(../img/amarelo.jpg);
     background-size: cover;
-    border: 10px green solid;                           
 }
 
 .texto1 {

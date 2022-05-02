@@ -8,7 +8,7 @@ body {
 
 
 .footer {
-    margin-top: 150px;
+    margin-top: 350px;
     background-color: #65b115;
     color: black;
     font-size: bold;
@@ -111,8 +111,8 @@ body {
 }
 
 .banner {
-    height: 700px;
-    background-image: url(../img/home.jpg);
+    height: 900px;
+    background-image: url(../img/hands.jpg);
     background-size: cover;
 }
 

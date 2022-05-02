@@ -1,22 +1,22 @@
 body {
     margin: 0px;
-    
-    background-image: linear-gradient(to right, green , rgb(140, 196, 28));
+    background-color: rgb(243, 242, 242);
     height: 300;
     /*box-shadow: 0px 0px 100px 5px;*/
 }
 
 .footer {
-    margin-top: 0px;
+    margin-top: 600px;
     background-color: #65b115;
-    color: black;
-    font-size: bold;
-    align-items: center;
-    height: 160px;
-    list-style: none;
+    height: 100px;
     font-family: monospace;
 }
 
+.membros{
+    text-decoration: none;
+    color: rgb(3, 78, 3);
+    
+}
 
 .logo {
     float: left;
@@ -32,6 +32,7 @@ body {
     width: 100%;
     height: 60px;
     align-items: center;
+    background-image: linear-gradient(to right, green , rgb(140, 196, 28));
 }
 
 .titulo {
@@ -51,10 +52,35 @@ body {
     display: flex;
 }
 
+.container2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.container3 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.copy{
+    padding-left: 50%;
+    color: aliceblue;
+    font-size: bold;
+    display: flex;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    z-index: 6;
+    height: 37px;
+}
+
 .header .container {
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .header input {
@@ -184,7 +210,7 @@ form li ul li {
 }
 
 .banner {
-    height: 600px;
+    height: 530px;
     background-image: url(../img/agora.jpg);
     background-size: cover;
 }
@@ -205,6 +231,52 @@ form li ul li {
 .texto2 {
     font-size: 50px;
     margin-top: 10px;
+    text-align: center;
+}
+
+.texto3 {
+    font-family: DejaVu Sans Mono, monospace;
+    color: black;
+    background-image: linear-gradient(to right, orange , yellow);
+    font-size: 20px;
+    width: 200%;
+    display: block;
+    margin-top: 150px;
+    text-align: center;
+    align-items: center ;
+    border-spacing: 0;
+    border-collapse: collapse;
+    z-index: 6;
+    height: 37px;
+}
+
+.texto4 {
+    padding-right: 25%;
+    color: black;
+    width: 500%;
+    display: flex;
+    flex-direction: column;
+    font-family: DejaVu Sans Mono, monospace;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.tec{
+height: 200px;
+width: 200px;
+border-radius: 100px;
+margin-top: 200px;
+padding-right: 30%;
+display: flex;
+}
+
+.solo{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-top: 400px;
 }
 
 .banner .card {
