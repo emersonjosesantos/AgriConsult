@@ -16,7 +16,7 @@
     <div class="header">
         <a href="inicio.html"><img src="img/logooriginal.png" class="logo"></a>
         <div class="container">
-            <a href="inicio.html"><h1 class="titulo" >AgroConsult</h1></a>
+            <h1><a href="inicio.html" class="titulo">AgroConsult</a></h1>
            
 
             <ul class="navbar">
@@ -25,8 +25,8 @@
                 <li><a href="calc.html">Calculadora</a></li>
                 <li><a href="#">Sobre Nós</a>
                     <ul>
-                      <li><a href="#">Nossos serviços</a></li>
-                      <li><a href="contato.html">Contato</a></li>
+                      <li><a href="#">Nossos Planos</a></li>
+                      <li><a href="contato.html">Fale Conosco</a></li>
                     </ul>
                   </li>
                 <li><a href="cadastro.html">Cadastro</a></li>
@@ -53,39 +53,16 @@
     </div>
 
     <!-- Rodapé -->
-    <footer id="footer">
-        <section class="container">
-            <article class="footer-menu">
-                <!-- Parte 1 -->
-                <div class="menu-item">
-                    <h4>Equipe Agro Consult</h4>
-                    <ul>
-                        <li>Emerson José dos Santos</li>
-                        <li>Felipe de Oliveira Pires</li>
-                        <li>Gabriel Henrique de Camargo Bordin</li>
-                        <li>Helder Davidson Rodrigues Alvarenga</li>
-                        <li>Henrique Oliveira da Silva</li>
-                        <li>Leandro Vieira da Costa</li>
-                    </ul>
-                </div>
-                <!-- Parte 2 -->
-                <div class="menu-item">
-                    <h4>Redes Sociais</h4>
-                    <div class="social-icons">
-                        <a href="https://github.com/Uken49/Agro-Consult"><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
+    <footer class="footer">
+        <div class="container3">
+            <ul>
+                <a href="contato.html" class="membros">Equipe AgroConsult</a><br>
+                
+            </ul>
+            <article>
+                <p class="copy">&copy;  <span id="i_ano" style="color: rgb(3, 100, 3);"></span> &nbsp; Todos direitos reservados à AgroConsult</p>
             </article>
-            <!-- Marca de copyright -->
-            <article class="copy">
-                <hr>
-                <p>&copy; <span id="spn_year"></span> Todos os direitos reservados para Agro Consult</p>
-            </article>
-        </section>
+        </div>
     </footer>
             
 </body>
@@ -123,4 +100,9 @@
         img_foto.src = "img/exibindo.png"  
     }
 }
-    </script>
+
+var Data_atual = new Date()
+var Ano_atual = Data_atual.getFullYear();
+document.getElementById('i_ano').innerHTML = Ano_atual
+
+</script>

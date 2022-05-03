@@ -1,21 +1,6 @@
 body {
     margin: 0px;
     background-color: rgb(243, 242, 242);
-    height: 300;
-    /*box-shadow: 0px 0px 100px 5px;*/
-}
-
-.footer {
-    margin-top: 600px;
-    background-color: #65b115;
-    height: 100px;
-    font-family: monospace;
-}
-
-.membros{
-    text-decoration: none;
-    color: rgb(3, 78, 3);
-    
 }
 
 .logo {
@@ -56,24 +41,13 @@ body {
     width: 80%;
     margin: auto;
     display: flex;
+    align-items: center;
 }
 
 .container3 {
     width: 80%;
     margin: auto;
     display: flex;
-}
-
-.copy{
-    padding-left: 50%;
-    color: aliceblue;
-    font-size: bold;
-    display: flex;
-    width: 100%;
-    border-spacing: 0;
-    border-collapse: collapse;
-    z-index: 6;
-    height: 37px;
 }
 
 .header .container {
@@ -83,7 +57,7 @@ body {
     
 }
 
-.header input {
+/*.header input {
     font-family: Courier New, monospace;
     color: black;
     height: 25px;
@@ -150,7 +124,6 @@ form li ul li {
 
 .navbar {
     background-color: rgba(250, 235, 215, 0);
-    
     font-size: medium;
     font-family: Courier New, monospace;
     width: 550px;
@@ -205,7 +178,6 @@ form li ul li {
 }
 
 .menu li {
-    /*-webkit-box-shadow: 0 3px 10px 0 yellowgreen;*/
     width: auto;
 }
 
@@ -239,22 +211,22 @@ form li ul li {
     color: black;
     background-image: linear-gradient(to right, orange , yellow);
     font-size: 20px;
-    width: 200%;
-    display: block;
-    margin-top: 150px;
+    width: 50%;
+    display: inline-block;
+    left: 60%;
+    margin-bottom: 300px;
     text-align: center;
     align-items: center ;
     border-spacing: 0;
     border-collapse: collapse;
     z-index: 6;
-    height: 37px;
 }
 
 .texto4 {
-    padding-right: 25%;
+    padding-right: 150px;
     color: black;
-    width: 500%;
-    display: flex;
+    width: 100%;
+    display: inline-block;
     flex-direction: column;
     font-family: DejaVu Sans Mono, monospace;
     align-items: center;
@@ -264,19 +236,21 @@ form li ul li {
 }
 
 .tec{
-height: 200px;
-width: 200px;
+left: 50%;
+height: 150px;
+width: 150px;
 border-radius: 100px;
 margin-top: 200px;
-padding-right: 30%;
-display: flex;
+display: inline-block;
 }
 
 .solo{
-    height: 200px;
-    width: 200px;
+    left: 50%;
+    height: 150px;
+    width: 150px;
     border-radius: 100px;
-    margin-top: 400px;
+    margin-top: 100px;
+    display: inline-block;
 }
 
 .banner .card {
@@ -310,4 +284,30 @@ display: flex;
 .card .texto_banner {
     color: white;
     font-size: 17px;
+}
+
+.footer {
+    margin-top: 150px;
+    background-color: #65b115;
+    height: 100px;
+    font-family: monospace;
+}
+
+.copy{
+    padding-left: 50%;
+    color: aliceblue;
+    font-size: bold;
+    display: flex;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    z-index: 6;
+    height: 37px;
+}
+
+
+.membros{
+    text-decoration: none;
+    color: rgb(3, 78, 3);
+    
 }

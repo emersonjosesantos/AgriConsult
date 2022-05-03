@@ -1,24 +1,6 @@
 body {
     margin: 0px;
-    background-color: green;
-}
 
-body ul li a {
-    color: yellow;
-}
-
-a:link {
-    color: yellow;
-    text-decoration: none;
-    font-weight: normal;
-    border-right-color: yellow;
-    border-bottom-color: yellow;
-    border-left-color: yellow;
-}
-
-a:hover {
-    color: yellow;
-    font-weight: bold;
 }
 
 .logo {
@@ -35,9 +17,11 @@ a:hover {
     width: 100%;
     height: 60px;
     align-items: center;
+    background-image: linear-gradient(to right, green , rgb(140, 196, 28));
 }
 
 .titulo {
+    text-decoration: none;
     position: relative;
     right: 55%;
     margin: 0px;
@@ -48,6 +32,12 @@ a:hover {
 }
 
 .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.container3 {
     width: 80%;
     margin: auto;
     display: flex;
@@ -86,18 +76,18 @@ a:hover {
 
 .navbar li a:hover {
     color: yellow;
-   
-    /* -webkit-box-shadow:0 3px 10px 0 rgb(8, 245, 40);*/
+    font-weight: bold;
+    -moz-box-shadow: 0 3px 100px 0 #CCC;
     text-shadow: 0px 0px 5px green;
 }
 
 .navbar li ul {
     position: absolute;
-    width: 105px;
+    width: 80px;
     padding: 1px;
     top: 25px;
     left: 0;
-    background-color: green;
+    background-image: linear-gradient(180deg, #65b115, rgb(140, 196, 28));
     display: none;
 }
 
@@ -109,20 +99,24 @@ a:hover {
 
     display: block;
     list-style-type: none;
-    width: 150px;
+    width: 100%;
+}
+
+.menu li {
+    width: auto;
 }
 
 .banner {
     display: flex;
-    height: 700px;
-    background-image: url("../img/cadastro.jpg");
+    height: 800px;
+    background-image: url(../img/hands.jpg);
     background-size: cover;
 }
 
 .card {
     font-family: Courier New, monospace;
-    background-color:#65b115;
-    color: rgb(10, 143, 10);
+    background-image: linear-gradient(to right, rgb(140, 196, 28), white);
+    color: green;
     height: 510px;
     width: 400px;
     display: flex;
@@ -164,7 +158,7 @@ a:hover {
 }
 
 input {
-    font-family: Courier New, monospace;
+    font-family: monospace;
     display: flex;
     position: relative;
     bottom: 7px;
@@ -184,6 +178,30 @@ input {
     cursor: hand;
     background-repeat: no-repeat;
     padding: 4px 0 4px 30px;
-    left: 14%;
+    left: 12%;
     bottom: 24.5%;
+}
+
+.footer {
+    margin-top: 0px;
+    background-color: #65b115;
+    height: 100px;
+    font-family: monospace;
+}
+
+.copy{
+    padding-left: 50%;
+    color: aliceblue;
+    font-size: bold;
+    display: flex;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    z-index: 6;
+    height: 37px;
+}
+
+.membros{
+    text-decoration: none;
+    color: rgb(3, 78, 3);
 }
